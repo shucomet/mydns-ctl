@@ -19,9 +19,9 @@ pub struct CmdArg {
     #[arg(long)]
     pub pass: String,
     /// URL of MyDNS
-    #[arg(long, default_value = "https://www.mydns.jp/directedit.html")]
+    #[arg(long, default_value = "http://localhost:8080/")]
     pub url: String,
     /// Subcommand
     #[clap(subcommand)]
-    command: Command,
+    pub command: Command,
 }
